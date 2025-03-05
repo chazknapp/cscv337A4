@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenère Cipher</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link the CSS file -->
+</head>
+<body>
+
+    <div class="container">
+        <h2>Vigenère Cipher Tool</h2>
+
+        <!-- First Row: Plaintext + Key -->
+        <div class="input-row">
+            <div>
+                <label for="plaintext">Plaintext:</label><br>
+                <input type="text" id="plaintext" placeholder="Enter message">
+            </div>
+            <div>
+                <label for="key">Key:</label><br>
+                <input type="text" id="key" placeholder="Enter key">
+            </div>
+        </div>
+
+        <!-- Encrypt Button -->
+        <button id="encryptBtn">Encrypt</button>
+
+        <!-- Second Row: Ciphertext + Key -->
+        <div class="input-row">
+            <div>
+                <label for="ciphertext">Ciphertext:</label><br>
+                <input type="text" id="ciphertext" placeholder="Enter ciphertext">
+            </div>
+            <div>
+                <label for="key">Key:</label><br>
+                <input type="text" id="key" placeholder="Enter key">
+            </div>
+        </div>
+
+        <!-- Decrypt Button -->
+        <button id="decryptBtn">Decrypt</button>
+
+        <!-- Results Box -->
+        <h3>Result:</h3>
+        <textarea id="output" readonly></textarea>
+
+        <!-- Error Message -->
+        <p id="error-message"></p>
+
+        <!-- QUnit Test Section -->
+        <div class="test-section">
+            <iframe src="Tests.html" style="width: 100%; min-height: 300px;"></iframe>
+        </div>
+    </div>
+
+    <script src="vigenere.js"></script>
+</body>
+</html>
